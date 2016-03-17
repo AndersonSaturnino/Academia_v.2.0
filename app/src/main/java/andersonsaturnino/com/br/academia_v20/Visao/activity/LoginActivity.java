@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 import andersonsaturnino.com.br.academia_v20.R;
 import andersonsaturnino.com.br.academia_v20.Visao.maps.Mapa;
@@ -19,6 +22,9 @@ import andersonsaturnino.com.br.academia_v20.Visao.maps.Mapa;
  */
 public class LoginActivity extends AppCompatActivity {
 
+    private Button logarFace;
+    private Button logarLocal;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +32,22 @@ public class LoginActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.tb_login);
         toolbar.setTitle("Logar");
         setSupportActionBar(toolbar);
+
+        logarFace = (Button) findViewById(R.id.logarFb);
+        logarFace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LoginActivity.this, "Facebook", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        logarLocal = (Button) findViewById(R.id.logar);
+        logarLocal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(LoginActivity.this, "Logando", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
