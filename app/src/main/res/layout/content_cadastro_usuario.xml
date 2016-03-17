@@ -12,124 +12,135 @@
     tools:context=".Visao.activity.Cadastro_Usuario"
     tools:showIn="@layout/activity_cadastro_usuario">
 
-    <!--Relative layout pai-->
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
 
-        <!--nome-->
-        <com.wrapp.floatlabelededittext.FloatLabeledEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:id="@+id/edtNomeUsuario"
-            android:layout_marginTop="20dp">
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Junte-se a nos!"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"/>
 
-             <EditText
-                android:layout_width="match_parent"
+    <!-- Linear Layout Pai -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        >
+
+        <!-- Relative com icones -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp">
+
+            <!--Icone Nome -->
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                 android:hint="Nome"
-                 android:inputType="textPersonName"
-                android:layout_marginTop="10dp"/>
+                android:src="@drawable/ic_account_grey600_24dp"
+                android:layout_marginTop="24dp"/>
 
-        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
-
-        <!--data de nascimento-->
-        <com.wrapp.floatlabelededittext.FloatLabeledEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/edtNomeUsuario"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:id="@+id/edtDtNasc"
-            android:paddingRight="@dimen/activity_horizontal_margin">
-
-            <EditText
-                android:layout_width="match_parent"
+            <!--Icone Usuario -->
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Data de Nascimento"
-                android:inputType="date"/>
-        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                android:src="@drawable/ic_account_star_grey600_24dp"
+                android:layout_marginTop="80dp"/>
 
-        <!--radio group de sexo-->
-        <RadioGroup
-            android:id="@+id/RadioGroup"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/edtDtNasc"
-            android:layout_marginTop="5dp"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin">
-
-            <android.support.v7.widget.AppCompatTextView
-                android:layout_width="match_parent"
+            <!--Icone Email -->
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="Sexo"
-                android:textSize="20dp" />
+                android:src="@drawable/ic_email_grey600_24dp"
+                android:layout_marginTop="135dp"/>
 
-            <!--relative layout pra poder deixar buttons na horizontal-->
-            <RelativeLayout
-                android:id="@+id/layout_radio"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <!--masculino-->
-                <RadioButton
-                    android:id="@+id/rbMasc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Masculino" />
-
-                <!--feminino-->
-                <RadioButton
-                    android:id="@+id/rbFem"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="120dp"
-                    android:text="Feminino" />
-
-            </RelativeLayout>
-
-        </RadioGroup>
-
-        <!--nome do usuario-->
-        <com.wrapp.floatlabelededittext.FloatLabeledEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:id="@+id/edtNomeUsuarioCadastr"
-            android:layout_below="@+id/RadioGroup"
-            android:layout_marginTop="20dp">
-
-            <EditText
-                android:layout_width="match_parent"
+            <!--Icone senha -->
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Usuario"
-                android:inputType="textPersonName"
-                android:layout_marginTop="10dp"/>
+                android:src="@drawable/ic_lock_grey600_24dp"
+                android:layout_marginTop="190dp"/>
 
-        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+        </RelativeLayout>
 
-        <!--senhado usuario-->
-        <com.wrapp.floatlabelededittext.FloatLabeledEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:id="@+id/edtSenhaUsuarioCadastr"
-            android:layout_below="@+id/edtNomeUsuarioCadastr"
+
+        <!-- Linear layout com editText -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="vertical"
             >
 
-            <EditText
+
+            <!--Nome Flutuante -->
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Senha"
-                android:inputType="textPersonName"
-                />
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
 
-        </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+                <EditText
+                    android:id="@+id/cadNome"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nome"
+                    android:inputType="textPersonName"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
 
-    </RelativeLayout>
+            <!--User Flutuante -->
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:id="@+id/cadUsuario"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Usuário"
+                    android:inputType="textPersonName"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <!--Email Flutuante -->
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:id="@+id/cadEmail"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="E-Mail"
+                    android:inputType="textEmailAddress"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+            <!--senha Flutuante -->
+            <com.wrapp.floatlabelededittext.FloatLabeledEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:id="@+id/cadSenha"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Senha"
+                    android:inputType="textPassword"/>
+            </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>

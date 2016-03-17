@@ -34,27 +34,6 @@ public class Cadastro_Usuario extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        grupoSexo = (RadioGroup) findViewById(R.id.RadioGroup);
-
-
-//        ImageButton imageButton = (ImageButton) findViewById(R.id.lgFace);
-//        imageButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                grupoSexo.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-//                    @Override
-//                    public void onCheckedChanged(RadioGroup group, int checkedId) {
-//
-//                        if (checkedId == R.id.rbFem) {
-//                            sexo = "Feminino";
-//                        } else if (checkedId == R.id.rbMasc) {
-//                            sexo = "Masculino";
-//                        }
-//                    }
-//                });
-//                Toast.makeText(Cadastro_Usuario.this, sexo, Toast.LENGTH_SHORT).show();
-//            }
-//        });
     }
 
     @Override

@@ -59,7 +59,7 @@
         <activity
             android:name=".Visao.activity.Lista_Treinos"
             android:label="@string/title_activity_lista__treinos"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
         <activity android:name=".Visao.activity.LoginActivity"></activity>
     </application>
 

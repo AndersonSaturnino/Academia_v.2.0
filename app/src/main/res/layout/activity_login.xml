@@ -3,11 +3,12 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.lucas.login.LoginActivity">
+    tools:context=".Visao.activity.LoginActivity">
 
     <ImageView
         android:id="@+id/myLogo"
@@ -16,6 +17,17 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
         android:src="@drawable/icon_academia"/>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/myLogo"
+        >
+
 
     <android.support.v7.widget.CardView
         android:id="@+id/card_view"
@@ -63,14 +75,14 @@
                 android:id="@+id/senhaLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:layout_below="@+id/usuarioLogin"
                 >
 
                 <EditText
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="10dp"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:hint="Senha"
@@ -87,21 +99,22 @@
             <Button
                 android:id="@+id/btLogar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_below="@+id/senhaLogin"
                 android:background="@color/colorAccent"
                 android:layout_marginTop="20dp"
                 android:text="Logar"
-                android:elevation="3dp"/>
+                android:elevation="3dp"
+                />
 
             <!--Botao logar com facebook -->
             <Button
                 android:id="@+id/btLogarFacebook"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_below="@+id/btLogar"
                 android:background="#FF3F51B5"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:text="Logar com facebook"
                 android:elevation="3dp"
                 />
@@ -109,5 +122,21 @@
         </RelativeLayout>
 
     </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_plus_white_24dp"
+        app:layout_anchor="@+id/card_view"
+        app:layout_anchorGravity="end"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/card_view"
+        android:elevation="3dp"
+        />
+
+    </android.support.design.widget.CoordinatorLayout>
 
 </RelativeLayout>
