@@ -1,4 +1,4 @@
-package andersonsaturnino.com.br.academia_v20.Visao;
+package andersonsaturnino.com.br.academia_v20.Visao.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

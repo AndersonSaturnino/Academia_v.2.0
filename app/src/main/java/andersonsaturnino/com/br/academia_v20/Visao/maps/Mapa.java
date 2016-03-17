@@ -1,4 +1,4 @@
-package andersonsaturnino.com.br.academia_v20.Visao;
+package andersonsaturnino.com.br.academia_v20.Visao.maps;
 
 import android.graphics.Bitmap;
 import android.support.v4.app.FragmentActivity;

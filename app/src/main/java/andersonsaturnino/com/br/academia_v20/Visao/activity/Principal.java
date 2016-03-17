@@ -1,9 +1,7 @@
-package andersonsaturnino.com.br.academia_v20.Visao;
+package andersonsaturnino.com.br.academia_v20.Visao.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -11,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import andersonsaturnino.com.br.academia_v20.R;
+import andersonsaturnino.com.br.academia_v20.Visao.maps.Mapa;
 
 public class Principal extends AppCompatActivity {
 
@@ -41,7 +40,7 @@ public class Principal extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.mnLogar) {
-            Intent login = new Intent(Principal.this, Cadastro_Usuario.class);
+            Intent login = new Intent(Principal.this, LoginActivity.class);
             startActivity(login);
         }
         if (id == R.id.mnMapa){

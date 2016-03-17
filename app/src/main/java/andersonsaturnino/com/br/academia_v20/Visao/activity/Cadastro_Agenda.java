@@ -1,4 +1,4 @@
-package andersonsaturnino.com.br.academia_v20.Visao;
+package andersonsaturnino.com.br.academia_v20.Visao.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,11 +10,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.Toast;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.List;
 
 import andersonsaturnino.com.br.academia_v20.DAO.AgendamentoDAO;

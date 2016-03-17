@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="andersonsaturnino.com.br.academia_v20.Visao.Lista_Treinos"
+    tools:context=".Visao.activity.Lista_Treinos"
     tools:showIn="@layout/activity_lista_treinos">
 
         <ListView

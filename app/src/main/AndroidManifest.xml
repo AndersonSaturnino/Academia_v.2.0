@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Visao.Principal"
+            android:name=".Visao.activity.Principal"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -38,28 +38,29 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Visao.Mapa"
+            android:name=".Visao.maps.Mapa"
             android:label="@string/title_activity_mapa" />
         <activity
-            android:name=".Visao.Cadastro_Treinos"
+            android:name=".Visao.activity.Cadastro_Treinos"
             android:label="@string/title_activity_cadastro__treinos"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Visao.Cadastro_Agenda"
+            android:name=".Visao.activity.Cadastro_Agenda"
             android:label="@string/title_activity_cadastro__agenda"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Visao.Treinar"
+            android:name=".Visao.activity.Treinar"
             android:label="@string/title_activity_treinar"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Visao.Cadastro_Usuario"
+            android:name=".Visao.activity.Cadastro_Usuario"
             android:label="@string/title_activity_cadastro__usuario"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Visao.Lista_Treinos"
+            android:name=".Visao.activity.Lista_Treinos"
             android:label="@string/title_activity_lista__treinos"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Visao.activity.LoginActivity"></activity>
     </application>
 
 </manifest>

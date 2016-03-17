@@ -13,7 +13,6 @@ import andersonsaturnino.com.br.academia_v20.Controle.ConexaoBD;
 import andersonsaturnino.com.br.academia_v20.Modelo.Agendamentos;
 import andersonsaturnino.com.br.academia_v20.Modelo.Semanas;
 import andersonsaturnino.com.br.academia_v20.Modelo.Treinos;
-import andersonsaturnino.com.br.academia_v20.Visao.Cadastro_Agenda;
 
 /**
  * Created by AndersonLuizRamos on 06/03/2016.

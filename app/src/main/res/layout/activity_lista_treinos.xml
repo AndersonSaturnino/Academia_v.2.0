@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="andersonsaturnino.com.br.academia_v20.Visao.Lista_Treinos">
+    tools:context=".Visao.activity.Lista_Treinos">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
