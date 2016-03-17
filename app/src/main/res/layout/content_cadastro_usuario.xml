@@ -79,7 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/login_facebook"
+            android:background="@drawable/facebook"
             android:layout_marginTop="30dp"
             android:layout_below="@+id/edtDtNasc"
             android:onClick="FacebookClick"/>

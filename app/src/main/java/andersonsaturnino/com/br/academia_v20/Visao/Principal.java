@@ -23,13 +23,6 @@ public class Principal extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG) .setAction("Action", null).show();
-            }
-        });
     }
 
     @Override
@@ -47,35 +40,31 @@ public class Principal extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.mnLogar) {
+            Intent login = new Intent(Principal.this, Cadastro_Usuario.class);
+            startActivity(login);
+        }
+        if (id == R.id.mnMapa){
+            Intent map = new Intent(Principal.this, Mapa.class);
+            startActivity(map);
         }
 
         return super.onOptionsItemSelected(item);
     }
 
-    public void CadastrarTreinoClick(View view) {
+    public void cadTreino(View view) {
         intent = new Intent(this, Cadastro_Treinos.class);
         startActivity(intent);
     }
 
-    public void CadastrarAgendaClick(View view) {
+    public void cadAgenda(View view) {
         intent = new Intent(this, Cadastro_Agenda.class);
         startActivity(intent);
     }
 
-    public void TreinarClick(View view) {
+    public void treinar(View view) {
         intent = new Intent(this, Treinar.class);
         startActivity(intent);
     }
 
-    public void AbrirMapaClick(MenuItem item) {
-        intent = new Intent(this, Mapa.class);
-        startActivity(intent);
-    }
-
-    public void CadastrarUsuariosClick(View view) {
-        intent = new Intent(this, Cadastro_Usuario.class);
-        startActivity(intent);
-    }
 }
