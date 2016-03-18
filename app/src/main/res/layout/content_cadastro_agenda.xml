@@ -84,7 +84,7 @@
             android:inputType="number"/>
     </com.wrapp.floatlabelededittext.FloatLabeledEditText>
 
-    <Button
+    <!--<Button
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:id="@+id/btnSalvarTreino"
@@ -95,9 +95,9 @@
         android:textColor="#FFFFFF"
         android:layout_toLeftOf="@+id/btnListarTreino"
         android:layout_marginRight="5dp"
-        android:onClick="btnSalvarClick"/>
+        android:onClick="btnSalvarClick"/>-->
 
-    <Button
+    <!--<Button
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:id="@+id/btnListarTreino"
@@ -108,19 +108,8 @@
         android:textColor="#FFFFFF"
         android:layout_centerHorizontal="true"
         android:layout_marginRight="5dp"
-        android:onClick="btnListaTreinosClick"/>
+        android:onClick="btnListaTreinosClick"/>-->
 
-    <Button
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnExcusaoTreino"
-        android:text="Excluir Treino"
-        android:layout_below="@+id/layout_edtSerie"
-        android:layout_marginTop="20dp"
-        android:background="?attr/colorPrimary"
-        android:textColor="#FFFFFF"
-        android:layout_toRightOf="@+id/btnListarTreino"
-        android:layout_marginRight="5dp"
-        android:onClick="btnExcluirTreinoClick"/>
+
 
 </RelativeLayout>

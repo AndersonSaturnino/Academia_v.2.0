@@ -2,7 +2,6 @@ package andersonsaturnino.com.br.academia_v20.Visao.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -10,15 +9,13 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.Toast;
 
 import andersonsaturnino.com.br.academia_v20.DAO.TreinoDAO;
 import andersonsaturnino.com.br.academia_v20.Modelo.Treinos;
 import andersonsaturnino.com.br.academia_v20.R;
 
 
-public class Cadastro_Treinos extends AppCompatActivity {
+public class Cadastro_Exercicios extends AppCompatActivity {
 
     TreinoDAO treinoDAO;
     private Treinos treinos = new Treinos();
@@ -28,12 +25,12 @@ public class Cadastro_Treinos extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_treinos);
+        setContentView(R.layout.activity_cadastro_exercicios);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("Novo Exercicio");
         setSupportActionBar(toolbar);
 
         edtDescricao = (EditText)findViewById(R.id.edtNomeTreino);
-        btSalvar = (Button)findViewById(R.id.btnSalvarTreino);
     }
 
     public void btnConfirmarClick(View view) {
@@ -45,6 +42,7 @@ public class Cadastro_Treinos extends AppCompatActivity {
 
         hideKeyboard(this);
         Snackbar.make(view, "Incluso com Sucesso", Snackbar.LENGTH_SHORT).setAction("Action", null).show();
+        finish();
     }
 
     public void btnExcluirClick(View view) {

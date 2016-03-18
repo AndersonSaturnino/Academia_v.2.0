@@ -41,7 +41,7 @@
             android:name=".Visao.maps.Mapa"
             android:label="@string/title_activity_mapa" />
         <activity
-            android:name=".Visao.activity.Cadastro_Treinos"
+            android:name=".Visao.activity.Cadastro_Exercicios"
             android:label="@string/title_activity_cadastro__treinos"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

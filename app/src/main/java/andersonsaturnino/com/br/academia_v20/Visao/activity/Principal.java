@@ -52,7 +52,7 @@ public class Principal extends AppCompatActivity {
     }
 
     public void cadTreino(View view) {
-        intent = new Intent(this, Cadastro_Treinos.class);
+        intent = new Intent(this, Cadastro_Exercicios.class);
         startActivity(intent);
     }
 

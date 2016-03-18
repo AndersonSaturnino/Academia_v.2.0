@@ -13,4 +13,6 @@
     <string name="title_activity_lista__treinos">Lista de Treinos</string>
     <string name="editar">Editar</string>
     <string name="excluir">Excluir</string>
+    <string name="salvar">Salvar</string>
+    <string name="listarTreino">Listar Treino</string>
 </resources>
