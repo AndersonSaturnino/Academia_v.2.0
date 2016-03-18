@@ -20,12 +20,6 @@ import andersonsaturnino.com.br.academia_v20.Visao.maps.Mapa;
 
 public class Cadastro_Usuario extends AppCompatActivity {
 
-    UsuariosDAO usuariosDAO;
-    private EditText edtNome;
-    private EditText edtDataNasc;
-    private RadioGroup grupoSexo;
-    private String sexo = null;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
