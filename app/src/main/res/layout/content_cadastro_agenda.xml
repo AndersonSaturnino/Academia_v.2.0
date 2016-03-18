@@ -74,15 +74,19 @@
         android:id="@+id/layout_edtPeso"
         android:layout_below="@+id/cbTreino"
         android:layout_toRightOf="@+id/layout_edtRepeticoes"
-        android:layout_marginRight="8dp">
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true">
 
         <EditText
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:id="@+id/edtPeso"
             android:hint="Peso:"
-            android:inputType="number"/>
+            android:inputType="number"
+            />
     </com.wrapp.floatlabelededittext.FloatLabeledEditText>
+
+
 
     <!--<Button
         android:layout_width="110dp"
