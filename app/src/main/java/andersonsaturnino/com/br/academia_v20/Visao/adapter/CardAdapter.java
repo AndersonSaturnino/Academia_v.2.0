@@ -15,7 +15,8 @@ import andersonsaturnino.com.br.academia_v20.Modelo.Semanas;
 import andersonsaturnino.com.br.academia_v20.R;
 
 /**
- * Created by Lucas Ferreira on 22/02/2016.
+ * Created by Lucas Ferreira on 21/03/2016.
+ * Classe responsalvel por gerenciar adapter do recyclerview
  */
 public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
 
