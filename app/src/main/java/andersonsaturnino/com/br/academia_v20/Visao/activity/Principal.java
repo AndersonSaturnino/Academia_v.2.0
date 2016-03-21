@@ -3,17 +3,23 @@ package andersonsaturnino.com.br.academia_v20.Visao.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import andersonsaturnino.com.br.academia_v20.R;
+import andersonsaturnino.com.br.academia_v20.Visao.adapter.CardAdapter;
 import andersonsaturnino.com.br.academia_v20.Visao.maps.Mapa;
 
 public class Principal extends AppCompatActivity {
 
     Intent intent;
+    RecyclerView recyclerItens;
+    private RecyclerView.LayoutManager mLayoutMananger;
+    private RecyclerView.Adapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +28,15 @@ public class Principal extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+        recyclerItens = (RecyclerView)findViewById(R.id.rv_semanas);
+        recyclerItens.setHasFixedSize(true);
+
+        mLayoutMananger = new LinearLayoutManager(this);
+        recyclerItens.setLayoutManager(mLayoutMananger);
+
+        mAdapter = new CardAdapter();
+        recyclerItens.setAdapter(mAdapter);
     }
 
     @Override
